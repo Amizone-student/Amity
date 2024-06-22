@@ -1,0 +1,90 @@
+﻿$(function () {
+    $("tr").each(function ()
+    {
+        var col_val = $(this).find('td:eq(5)').text();
+        if (col_val === "F")
+        {
+
+        }
+        else
+        {
+            var col_val = $(this).find('td:eq(10)').text();
+        }
+        
+        var col_val1 = $(this).find("td:eq(5)").text();
+        var col_val2 = $(this).find("td:eq(5)").text();
+        var col_val3 = $(this).find("td:eq(5)").text();
+        var col_val4 = $(this).find("td:eq(5)").text();
+        var col_val5 = $(this).find("td:eq(5)").text();
+        var col_val6 = $(this).find("td:eq(5)").text();
+        var col_val7 = $(this).find("td:eq(5)").text();
+        var col_val8 = $(this).find("td:eq(5)").text();
+
+        if (col_val == "F")
+        {
+            $(this).addClass('danger');  //the selected class colors the row green//
+        }
+        else if (col_val1 == "9999") {
+            $("td:contains('9999')").html("AB");
+            $(this).addClass('danger');
+        }
+        else if (col_val1 == "AB") {
+            $(this).addClass('danger');
+        }
+
+        else if (col_val2 == "9998") {
+            $("td:contains('9998')").html("DE/DC");
+            $(this).addClass('danger');
+        }
+        else if (col_val2 == "DE/DC") {
+            $(this).addClass('danger');
+        }
+
+
+        else if (col_val3 == "9997") {
+            $("td:contains('9997')").html("UFM");
+            $(this).addClass('danger');
+        }
+        else if (col_val3 == "UFM") {
+
+            $(this).addClass('danger');
+        }
+
+        else if (col_val4 == "9996") {
+            $("td:contains('9996')").html("RL");
+            $(this).addClass('danger');
+        }
+        else if (col_val4 == "RL") {
+
+            $(this).addClass('danger');
+        }
+        else if (col_val5 == "9995") {
+            $("td:contains('9995')").html("I");
+            $(this).addClass('danger');
+        }
+        else if (col_val5 == "I") {
+
+            $(this).addClass('danger');
+        }
+        else if (col_val6 == "9994") {
+            $("td:contains('9994')").html("EC");
+            $(this).addClass('danger');
+        }
+        else if (col_val6 == "EC") {
+
+            $(this).addClass('danger');
+        }
+        else if (col_val6 == "9992") {
+            $("td:contains('9992')").html("IE");
+            $(this).addClass('danger');
+        }
+        else if (col_val6 == "IE") {
+
+            $(this).addClass('danger');
+        }
+        else {
+            $(this).addClass('bad');
+
+        }
+    });
+});
